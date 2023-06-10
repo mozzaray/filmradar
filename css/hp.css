@@ -39,12 +39,12 @@ body{
     z-index: 1;
 }
 
-h5{
-    font-size: 24px;
-    font-family: 'Noto Sans TC', sans-serif;
-    line-height: 40px;
-    letter-spacing: 4px;
+.img6{
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
+
 
 .ls{
     letter-spacing: 20px;
@@ -72,6 +72,40 @@ h5{
     z-index: 2;
 }
 
+.txt-4{
+    display: flex;
+    justify-content: space-between;
+    margin: 115px 0;
+
+}
+
+.txt-4 li{
+    background-color: rgba(255, 255, 255, .5);
+    width: 387px;
+    height: 519px;
+    padding: 64px 18px;
+    border-radius: 10px;
+}
+
+.txt-4 li img{
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.txt-5{
+    display: flex;
+    margin-top: 713px;
+}
+
+h6{
+    padding: 0 25px;
+}
+
+.gotic{
+    font-family: 'Dela Gothic One', cursive;
+}
+
 .c-block{
     background-color: #D10F78;
     width: 285px;
@@ -81,3 +115,4 @@ h5{
     top: 1085px;
     right: 461px;
 }
+
