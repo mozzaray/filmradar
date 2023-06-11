@@ -10,10 +10,7 @@ html{
 
 a{
     text-decoration: none;
-    font-family: 'Mochiy Pop One', sans-serif;
-    font-size: 2rem;
 }
-
 
 .wrapper{
     position: relative;
@@ -66,7 +63,7 @@ header img{
     position: relative;
     
 }
-.list > li > a{
+.list > li  a{
     display: block;
     color: #fff;
 
@@ -74,23 +71,25 @@ header img{
     font-size: 1rem;
     line-height: 5;
     text-align: center;
-    
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 2rem; 
+}
 
-    
+.list > li  a{
+    text-align: left;
 }
 
 
 /* -----dropdown nav----- */
 
 .drop{
-    /* border: 1px solid red; */
     display: none;
     background-color: #fff;
     background-color: #06236c;
     border-radius: 5px;
     position: absolute;
-    top: 75px;
-    left: 0;
+    top: 70px;
+    left: -5px;
   
 
 }
@@ -102,13 +101,14 @@ header img{
     
     color: #fff;
     display: block;
-    line-height: 2;
+    line-height: 2.5;
     padding: 10px;
     width: 100px;
+    letter-spacing: 2px;
 
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .drop li:last-child{
@@ -117,6 +117,60 @@ header img{
 
 .list > li:hover .drop{
     display: block;
+}
+
+
+/* -----footer----- */
+
+footer{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 2rem;
+
+    font-weight: 400;
+    margin: 100px 360px 0;
+    padding: 36px 102px;
+    /* outline: 1px solid yellow; */
+    justify-content: space-between;
+    letter-spacing: 1.5px;
+}
+footer img{
+    width: 274px;
+    float: left;
+}
+
+footer a{
+    font-weight: 400;
+    line-height: 2;
+}
+
+.base{
+    display: flex;
+    float: right;
+}
+
+.base > li{
+    margin-left: 36px;
+    /* border: 1px solid blue; */
+}
+.base > li > a{
+    width: 80px;
+    font-weight: 600;
+}
+
+.base2 {
+    line-height: 2;
+}
+
+.base2:first-child{
+    font-weight: 700;
+}
+
+footer p{
+    font-size: 10px;
+    clear: both;
+    text-align: center;
+    padding-top: 50px;
+
 }
 
 /* ----- font ----- */
@@ -128,8 +182,14 @@ h2{
     line-height: 1.25; 
 }
 
+h3{
+    font-size: 6rem;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
 h5{
-    font-size: 24px;
+    font-size: 3rem;
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 40px;
     letter-spacing: 4px;
@@ -139,6 +199,7 @@ h6{
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .txt-white{
@@ -147,6 +208,11 @@ h6{
 
 .bold{
     font-weight: 700;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
 }
 
 

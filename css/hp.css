@@ -59,10 +59,12 @@ body{
     padding-top: 417px;
     z-index: 2;
     position: relative;
+    width: 700px;
 }
 
 .txt-2{
     margin-top: 604px;
+    width: 600px;
 }
 
 .txt-3{
@@ -70,6 +72,7 @@ body{
     margin-left: 102px;
     position: relative;
     z-index: 2;
+    width: 800px;
 }
 
 .txt-4{
@@ -77,6 +80,10 @@ body{
     justify-content: space-between;
     margin: 115px 0;
 
+}
+
+.txt-4 h6{
+    padding: 0 25px;
 }
 
 .txt-4 li{
@@ -96,11 +103,48 @@ body{
 .txt-5{
     display: flex;
     margin-top: 713px;
+    align-items: center;
+
 }
 
-h6{
-    padding: 0 25px;
+.number{
+    text-align: right;
+    margin-right: 126px;
+    /* outline: 1px solid red; */
 }
+
+.number h2{
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.number h6{
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+
+.number img{
+    margin-top: 20px;
+}
+
+
+.cta{
+    /* outline: 1px solid blue; */
+    color: #D10F78;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+.cta h3:nth-child(2){
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+
+footer a{
+    color: white;
+}
+
 
 .gotic{
     font-family: 'Dela Gothic One', cursive;
@@ -115,4 +159,5 @@ h6{
     top: 1085px;
     right: 461px;
 }
+
 
