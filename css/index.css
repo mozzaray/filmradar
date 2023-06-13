@@ -6,66 +6,55 @@ body{
 
 .img1{
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+    z-index: -1;
 }
 
 .b2{
     /* border: 1px solid red; */
-    margin-top: 100px;
+    margin-top: 120px;
     height: 430px;
-}
-/* .img2{
-    position: absolute;
-    top: 803px;
-    left: 360px;
-    z-index: 1;
-} */
-.img2{
     position: relative;
-    z-index: 1;
+    margin-left: 360px;
+    padding-right: 360px;
 }
 
 .c-block{
     background-color: #D10F78;
     width: 285px;
     height: 165px;
-    /* position: absolute; */
-    position: relative;
+    position: absolute;
     z-index: -1;
-    left: 818px;
-    top: -89px;
-    /* top: 1142px;
-    right: 461px; */
+    top: 317px;
+    right: 480px;
 }
 
 
 .img3{
-    position: absolute;
-    top: 1417px;
-    left: 1071px;
-    z-index: 1;
+    display: block;
+    margin-right: 360px;
+    margin-left: auto;
+    margin-top: -170px;
 }
 
 .img4{
-    position: absolute;
-    left: 0;
-    top: 1613px;
-    z-index: 2;
+    display: block;
+    margin-top: -50px;
+
 }
 
 .img5{
-    position: absolute;
-    right: 0;
-    top: 1950px;
-    z-index: 1;
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+    position: relative;
+    margin-top: -153px;
+    z-index: -1;
 }
 
 .img6{
-    position: absolute;
-    left: 0;
     width: 100%;
 }
 
@@ -79,36 +68,28 @@ body{
 }
 
 .txt-1{
-    margin-left: 102px;
-    padding-top: 337px;
-    z-index: 2;
-    position: relative;
+    margin-left: 462px;
     width: 700px;
+    margin-top: -300px;
 }
 
 .txt-2{
-    margin-top: 604px;
+    margin: 138px auto 100px 360px;
     width: 600px;
-    position: absolute;
-    z-index: 2;
-    top: 686px;
-    left: 360px;
 }
 
 
 .txt-3{
-    top: 2417px;
-    margin-left: 102px;
-    position: absolute;
-    z-index: 2;
     width: 800px;
+    margin-left: 462px;
+    margin-top: -274px;
 }
 
 .txt-4{
     display: flex;
     justify-content: space-between;
-    margin-top: 770px;
-    margin-bottom: 40px;
+    margin: 202px 0 150px;
+    padding: 0 360px;
    
 }
 
@@ -125,6 +106,10 @@ body{
     flex-shrink: 0;
 }
 
+.txt-4 li:nth-child(2){
+    margin: 0 20px;
+}
+
 .txt-4 li img{
     width: 100%;
     display: block;
@@ -133,9 +118,10 @@ body{
 
 .txt-5{
     display: flex;
-    margin-top: 711px;
+    width: 1200px;
+    margin: 100px auto;
     align-items: center;
-
+    /* border: 1px solid red; */
 }
 
 .number{
