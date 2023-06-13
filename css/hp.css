@@ -1,6 +1,6 @@
 body{
     color: #fff;
-    background-image: linear-gradient(#2b2b2b, #333);
+    background-image: linear-gradient(#141212, #333);
 }
 
 
@@ -12,17 +12,41 @@ body{
     z-index: 1;
 }
 
-.img2{
+.b2{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    height: 430px;
+}
+/* .img2{
     position: absolute;
-    top: 773px;
+    top: 803px;
     left: 360px;
     z-index: 1;
+} */
+.img2{
+    position: relative;
+    z-index: 1;
 }
+
+.c-block{
+    background-color: #D10F78;
+    width: 285px;
+    height: 165px;
+    /* position: absolute; */
+    position: relative;
+    z-index: -1;
+    left: 818px;
+    top: -89px;
+    /* top: 1142px;
+    right: 461px; */
+}
+
 
 .img3{
     position: absolute;
     top: 1417px;
-    right: 360px;
+    left: 1071px;
+    z-index: 1;
 }
 
 .img4{
@@ -56,7 +80,7 @@ body{
 
 .txt-1{
     margin-left: 102px;
-    padding-top: 417px;
+    padding-top: 337px;
     z-index: 2;
     position: relative;
     width: 700px;
@@ -65,12 +89,17 @@ body{
 .txt-2{
     margin-top: 604px;
     width: 600px;
+    position: absolute;
+    z-index: 2;
+    top: 686px;
+    left: 360px;
 }
 
+
 .txt-3{
-    margin-top: 915px;
+    top: 2417px;
     margin-left: 102px;
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 800px;
 }
@@ -78,8 +107,9 @@ body{
 .txt-4{
     display: flex;
     justify-content: space-between;
-    margin: 115px 0;
-
+    margin-top: 770px;
+    margin-bottom: 40px;
+   
 }
 
 .txt-4 h6{
@@ -88,10 +118,11 @@ body{
 
 .txt-4 li{
     background-color: rgba(255, 255, 255, .5);
-    width: 387px;
-    height: 519px;
+    width: 371px;
+    min-height: 519px;
     padding: 64px 18px;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .txt-4 li img{
@@ -102,15 +133,16 @@ body{
 
 .txt-5{
     display: flex;
-    margin-top: 713px;
+    margin-top: 711px;
     align-items: center;
 
 }
 
 .number{
     text-align: right;
-    margin-right: 126px;
+    margin-right: 119px;
     /* outline: 1px solid red; */
+    width: 489px;
 }
 
 .number h2{
@@ -134,6 +166,7 @@ body{
     color: #D10F78;
     font-weight: 500;
     line-height: 72px;
+    width: 590px;
 }
 
 .cta h3:nth-child(2){
@@ -150,14 +183,5 @@ footer a{
     font-family: 'Dela Gothic One', cursive;
 }
 
-.c-block{
-    background-color: #D10F78;
-    width: 285px;
-    height: 165px;
-    position: absolute;
-    z-index: -1;
-    top: 1085px;
-    right: 461px;
-}
 
 

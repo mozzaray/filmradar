@@ -1,0 +1,103 @@
+
+
+.filter h6{
+    margin-right: 30px;
+}
+
+.sort::after{
+    content: '\f0dd';
+    font: var(--fa-font-solid);
+    font-size: 13px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.angle::after{
+    content: '\f107';
+    font: var(--fa-font-solid);
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+
+
+/* ---------aside------- */
+
+.search {
+    border: 1px solid #D10F78;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 42px;
+
+}
+
+.search button{
+    background-color: hsl(0, 0%, 100%);
+    color: #D10F78;
+    border: none;
+}
+
+.search button i{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.search input{
+    height: 42px;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+
+.tag-list{
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 286px;
+}
+
+
+/* --------rank list----- */
+
+.film-list{
+    /* border: 1px solid green; */
+    margin-left: 20px;
+    flex-grow: 1;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: left;
+}
+
+
+.film{
+    width: 207px;
+    /* border: 1px solid red; */
+    margin-left: 16px;
+    margin-bottom: 35px;
+}
+
+/* .film:nth-child(4n){
+    margin-right: 0;
+} */
+
+.film img{
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.film p:first-child{
+    font-weight: 600;
+    
+}
+
+.film p:last-child{
+    font-weight: 400;
+    color: #B5B5B5;
+    margin-top: 5px;
+
+
+}
