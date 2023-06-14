@@ -79,6 +79,10 @@
     margin-bottom: 35px;
 }
 
+.film a{
+    color: #220C25;
+}
+
 /* .film:nth-child(4n){
     margin-right: 0;
 } */
@@ -86,7 +90,7 @@
 .film img{
     display: block;
     width: 100%;
-    margin-bottom: 12px;
+    /* margin-bottom: 8px; */
 }
 
 .film p:first-child{
@@ -98,6 +102,6 @@
     font-weight: 400;
     color: #B5B5B5;
     margin-top: 5px;
-
+    line-height: 1;
 
 }

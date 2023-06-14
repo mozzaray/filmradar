@@ -12,6 +12,11 @@ a{
     text-decoration: none;
 }
 
+.float-r{
+    float: right;
+    margin-right: 50px;
+}
+
 /* ---- container----- */
 
 .wrapper{
@@ -42,6 +47,13 @@ a{
     
     display: flex;
     align-items: center;
+}
+
+.f-img{
+    flex-basis: 182px;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 aside{
@@ -92,11 +104,38 @@ aside{
     background-color: #D10F78;
     color: white;
     text-align: center;
-    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     border-radius: 34px;
     line-height: 3;
 
+}
+
+.search {
+    border: 1px solid #D10F78;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 42px;
+
+}
+
+.search button{
+    background-color: hsl(0, 0%, 100%);
+    color: #D10F78;
+    border: none;
+}
+
+.search button i{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.search input{
+    height: 42px;
+    width: 200px;
+    border: none;
+    outline: none;
 }
 
 .line{
@@ -361,3 +400,15 @@ p{
 .col-10 { width: 83.333333%;}
 .col-11 { width: 91.666666%;}
 .col-12 {width: 100%;}
+
+/* ----star---- */
+
+.star {
+    border: 1px solid #D10F78;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.s-star {
+    border: 1px solid #D10F78;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
