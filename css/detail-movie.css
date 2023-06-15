@@ -1,11 +1,21 @@
 /* ---------banner info------- */
 
 
-.banner{
+.banner-m{
     width: 100%;
     height: 646px;
     margin-top: 101px;
     background-image: url(../images/tile.png), url(../images/dm-banner2.jpg);
+    background-repeat: repeat, no-repeat;
+    background-size:3px, cover;
+    padding: 90px 360px 34px;
+}
+
+.banner-s{
+    width: 100%;
+    height: 646px;
+    margin-top: 101px;
+    background-image: url(../images/tile.png), url(../images/ds-banner.jpg);
     background-repeat: repeat, no-repeat;
     background-size:3px, cover;
     padding: 90px 360px 34px;
@@ -47,6 +57,18 @@
 
 .stream {
     margin-left: 250px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.disney{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #1A1D29;
+    margin-left: 10px;
 }
 
 .poster{
@@ -64,6 +86,18 @@
     align-content: flex-start;
     justify-content: space-between;
 
+}
+
+.poster-pic img{
+    display: inline-block;
+}
+
+.poster-pic img:first-child{
+    margin-bottom: 9px;
+}
+
+.poster-pic img:last-child{
+    margin-left: 9px;
 }
 
 .score{
@@ -91,6 +125,13 @@
     margin-top: 200px;
 
 }
+
+.gallery-s{
+    /* border: 1px solid green; */
+    margin-top: 300px;
+
+}
+
 
 .subgallery{
     display: flex;
