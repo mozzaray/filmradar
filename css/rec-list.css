@@ -1,0 +1,78 @@
+/* -----popular----- */
+
+.wrapper-2 > h4{
+    margin-bottom: 30px;
+}
+
+.pop-list{
+    
+
+}
+
+.pop{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.rec-txt{
+    margin: auto 20px;
+    padding-right: 20px;
+}
+
+.list-name{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list-name h4{
+    color: #220C25;
+}
+
+.list-name i{
+    font-size: 25px;
+    color: #D10F78;
+}
+
+.rec-txt span{
+    font-weight: 500px;
+}
+
+.rec-txt p:last-child{
+    margin-top: 30px;
+}
+
+/* ---------banner-------- */
+
+.banner{
+    background-image: url(../images/rec-list-banner.jpg);
+    width: 100%;
+    height: 427px;
+    padding: 150px 374px;
+}
+
+.banner > h3{
+    margin-bottom: 30px;
+}
+
+/* ------other lists------ */
+
+.search{
+    margin-bottom: 20px;
+}
+
+.u-list{
+    display: flex;
+    margin-left: 124px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+
+.users img{
+    width: 385px;
+
+}
+
+
+

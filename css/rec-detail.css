@@ -1,43 +1,40 @@
+nav a{
+    margin-left: 60px;
+}
 
+/* ----description---- */
 
+.des{
+    margin: 100px 0 50px;
+}
 
-
-
-/* ---------aside------- */
-
-.search {
-    border: 1px solid #D10F78;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 42px;
+.list-name{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
-.search button{
-    background-color: hsl(0, 0%, 100%);
-    color: #D10F78;
-    border: none;
+.list-name h3{
+    color: #220C25;
+    margin: 20px 0;
 }
 
-.search button i{
+.list-name i{
     font-size: 25px;
-    line-height: 40px;
+    color: #D10F78;
 }
 
-.search input{
-    height: 42px;
-    width: 200px;
-    border: none;
-    outline: none;
+.des h6{
+    margin-top: 10px;
 }
 
-
-
-/* --------rank list----- */
+/* films */
 
 .film-list{
     /* border: 1px solid green; */
-    margin-left: 20px;
+    margin: 0 20px;
     flex-grow: 1;
     
     display: flex;
@@ -50,9 +47,14 @@
 .film{
     width: 207px;
     /* border: 1px solid red; */
-    margin-left: 16px;
+    margin-right: 30px;
     margin-bottom: 35px;
 }
+
+.film.film:nth-child(5n){
+    margin-right: 0;
+}
+
 
 .film a{
     color: #220C25;
