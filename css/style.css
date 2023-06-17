@@ -32,8 +32,6 @@ a{
     padding-top: 30px;
 }
 
-
-
 .flex{
     display: flex;
 }
@@ -145,6 +143,10 @@ aside{
     width: 1200px;
     background-image: linear-gradient(to right, #06236c, #D10F78);
     margin: 5px auto 30px;
+}
+
+.fa-angle-right{
+    font-size: 18px;
 }
 
 /* ----- header ----- */
