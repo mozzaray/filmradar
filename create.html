@@ -17,10 +17,10 @@
     <link rel="bookmark" href="images/favicon.ico" />
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/rec-detail.css">
+    <link rel="stylesheet" href="css/create.css">
     
     
-    <title>片單</title>
+    <title>建立片單</title>
 </head>
 <body>
 
@@ -52,50 +52,63 @@
         </ul>
     </header>
 
-    <!-- header2 -->
-
-    <!-- <nav>
-        <a href="">片單</a>
-        <a href="">推薦</a>
-    </nav> -->
+   <section class="wrapper">
+        <div class="gradient">
+            <h6>點選以設定橫幅</h6>
+        </div>
+   </section>
 
     <!-- description -->
     <section class="wrapper-2">
+        <form action="" class="form">
+            <div>
+                <label for="">片單名稱</label>
+                <input type="text">
+    
+                <label for="">請為片單輸入5個tag</label>
+                <span>請以逗號分隔</span>
+                <input type="text">
+    
+                <label for="">片單敘述</label>
+                <textarea name="" id="" cols="50" rows="8"></textarea>
+    
 
-        <div class="des">
-            <p>B24601J 創造</p>
-            <div class="list-name col-3">
-                <h3 class="bold">清單名</h3>
-                <i class="fa-regular fa-heart"></i>
             </div>
 
-            <div>
+            <div class="right">
+                <label for="">隱私設定</label>
+                <select name="privacy" id="">
+                    <option value="public">公開</option>
+                    <option value="personal">私人</option>
+                    <option value="f-only">追蹤者限定</option>
+                </select>
+
+                <label for="">片單排序</label>
+                <select name="sort" id="">
+                    <option value="">熱門度</option>
+                    <option value="saab">年分</option>
+                    <option value="saab">類別</option>
+                    <option value="mercedes">加入時間</option>
+                    <option value="mercedes">手動</option>
+                </select>
+            </div>
+           
+        </form>
+       
+            <!-- <div>
                 <button class="tag">經典之作</button>
                 <button class="tag">視覺效果</button>
                 <button class="tag">刺激劇情</button>
                 <button class="tag">驚人演技</button>
                 <button class="tag">曲折劇情</button>
-            </div>
+            </div> -->
 
-            <h6 class="col-6">
-                帶領觀眾經歷令人難以置信的冒險、神奇的魔法和意想不到的故事情節。每部電影都揭示了人性的不同層面，以及想像力的力量，讓觀眾沉浸在夢幻般的故事之中
-            </h6>
+
+        <div class="adj">
+            <img src="images/filter-dark.png" alt="">
         </div>
-
-
-        <div class="filter">
-            
-            <h6 class="bold">排序</h6>
-            
-            <h6 class="icon sort">年代</h6>
-
-            <h6 class="icon sort">熱門度</h6>
-            
-            <h6 class="icon angle">電影類別</h6>
-
-            <img src="images/filter.png" alt="" class="f-img">
-        </div>
-
+        <div class="line"></div>
+        
         <div class="film-list">
             
             <div class="film">

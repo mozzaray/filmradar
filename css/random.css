@@ -1,0 +1,50 @@
+/* -----banner---- */
+
+.flex{
+    display: flex;
+    background-size: cover;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.banner-r{
+    width: 50%;
+    background-image: url(../images/random-banner.jpg);
+    height: 425px;
+    display: inline-block;
+}
+
+h2{
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: #06236C;
+    /* border: 1px solid brown; */
+    margin: -40px 0 0 20px;
+}
+
+/* questions */
+
+.wrapper-2{
+    padding: 0 203px;
+}
+
+.ques{
+    margin-bottom: 30px;
+}
+
+.ques h6{
+    margin-bottom: 10px;
+}
+
+.search{
+    width: 278px; 
+    margin-bottom: 10px;
+}
+.search input{
+    width: 238px;
+}
+
+.btn-small{
+    margin-top: 20px;
+}
