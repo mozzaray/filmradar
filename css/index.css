@@ -89,7 +89,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 202px 0 150px;
-    padding: 0 360px;
+    /* padding: 0 360px; */
    
 }
 
