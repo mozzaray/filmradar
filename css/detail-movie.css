@@ -90,7 +90,7 @@
 }
 
 .poster-pic{
-
+    /* border: 1px solid red; */
 }
 
 .poster-pic img{
@@ -102,14 +102,26 @@
     margin-bottom: 9px;
 }
 
-.poster-pic img:last-child{
+/* .poster-pic img:last-child{
     margin-left: 9px;
-}
+} */
 
 .in-poster{
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
+    width: 100%;
+
+    /* border: 1px solid blue; */
+}
+
+.p-box{
+    margin-right: 9px;
+}
+
+.in-poster img{
+    flex-shrink: 1;
+    display: block;
 }
 
 .score{
