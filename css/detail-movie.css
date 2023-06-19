@@ -88,16 +88,26 @@
 
 }
 
+.poster-pic{
+
+}
+
 .poster-pic img{
     display: inline-block;
 }
 
-.poster-pic img:first-child{
+.poster-pic > img{
     margin-bottom: 9px;
 }
 
 .poster-pic img:last-child{
     margin-left: 9px;
+}
+
+.in-poster{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 .score{
