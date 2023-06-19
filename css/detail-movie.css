@@ -137,9 +137,13 @@
 
 .about{
     /* border: 1px solid green; */
-    width: 666px;
+    /* width: 666px; */
+    /* margin: 0 auto; */
     margin-top: -85px;
-    margin-left: 461px;
+    /* margin-left: 461px; */
+    margin-right: 102px;
+    margin-left: auto;
+    
 }
 
 /* ------photo----- */
