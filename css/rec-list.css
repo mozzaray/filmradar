@@ -57,8 +57,20 @@
 
 /* ------other lists------ */
 
+aside{
+    position: sticky;
+    top: 111px;
+}
+
 .search{
     margin-bottom: 20px;
+    /* position: sticky;
+    top: 111px; */
+}
+
+.tag-list{
+    /* position: sticky;
+    top: 111px; */
 }
 
 .u-list{
@@ -67,6 +79,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     /* border: 1px solid green; */
+    margin-bottom: 20px;
+}
+
+.users{
     margin-bottom: 20px;
 }
 

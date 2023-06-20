@@ -17,26 +17,38 @@ body{
     margin-top: 120px;
     height: 430px;
     position: relative;
-    margin-left: 360px;
-    padding-right: 360px;
+    /* margin-left: 360px; */
+    /* padding-right: 360px; */
+    width: 1200px;
+    margin: 120px auto 0;
+}
+
+.img2{
+    display: block;
 }
 
 .c-block{
     background-color: #D10F78;
     width: 285px;
     height: 165px;
-    position: absolute;
-    z-index: -1;
-    top: 317px;
-    right: 480px;
+    margin-left: 720px;
+    margin-top: -100px;
+    /* position: absolute; */
+    /* z-index: -1; */
+    /* top: 317px;
+    right: 480px; */
 }
 
 
 .img3{
     display: block;
-    margin-right: 360px;
+    /* margin-right: 360px; */
+    /* margin-left: auto; */
+    margin-right: 0;
     margin-left: auto;
-    margin-top: -170px;
+    margin-top: -65px;
+    position: relative;
+    z-index: 2;
 }
 
 .img4{
@@ -68,40 +80,49 @@ body{
 }
 
 .txt-1{
-    margin-left: 462px;
-    width: 700px;
-    margin-top: -300px;
+    width: 1200px;
+    margin: -300px auto 0 ;
+    padding-left: 102px;
 }
 
 .txt-2{
-    margin: 138px auto 100px 360px;
-    width: 600px;
+    /* margin: 138px auto 100px 360px; */
+    margin: 138px auto 0;
+    width: 1200px;
+    padding-left: 102px;
 }
 
+.txt-2 h5{
+    width: 590px;
+}
 
 .txt-3{
-    width: 800px;
-    margin-left: 462px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.txt-3 h2{
+    width: 792px;
     margin-top: -274px;
+    margin-left: 102px;
 }
 
 .txt-4{
     display: flex;
-    justify-content: space-between;
-    margin: 202px 0 150px;
-    /* padding: 0 360px; */
-   
+    justify-content: space-around;
+    margin: 50px auto 100px;
+    width: 1000px;
 }
 
-.txt-4 h6{
+.txt-4 p{
     padding: 0 25px;
 }
 
 .txt-4 li{
     background-color: rgba(255, 255, 255, .5);
-    width: 371px;
-    min-height: 519px;
-    padding: 64px 18px;
+    flex-basis: 300px;
+    /* min-height: 519px; */
+    padding: 40px 30px;
     border-radius: 10px;
     flex-shrink: 0;
 }
@@ -111,15 +132,16 @@ body{
 }
 
 .txt-4 li img{
-    width: 100%;
+    width: 70%;
     display: block;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
+    
 }
 
 .txt-5{
     display: flex;
     width: 1200px;
-    margin: 100px auto;
+    margin: 50px auto;
     align-items: center;
     /* border: 1px solid red; */
 }
