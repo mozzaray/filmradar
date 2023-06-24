@@ -95,6 +95,7 @@
 /* ---------comming soon--------- */
 .cs{
     /* border: 1px solid red; */
+    width: 100%;
     padding: 0 58px;
     display: flex;
     justify-content: space-between;
@@ -102,6 +103,13 @@
 
 .cs-pos{
     /* border: 1px solid blue; */
+    flex-basis: 284px;
+    
+}
+
+.cs-pos img{
+    width: 100%;
+
 }
 
 .cs-pos > h6{

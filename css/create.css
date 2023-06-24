@@ -29,7 +29,7 @@
 }
 
 label{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 500px;
     display: block;
@@ -39,7 +39,8 @@ label{
 form span{
     font-size: 1.5rem;
     display: block;
-    line-height: 2;
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
 input{
