@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 8px;
+    font-size: 50%;
 }
 
 a{
@@ -327,6 +327,20 @@ header .list > li > a{
     text-align: center;
 }
 
+/* ---hamburger--- */
+.ham{
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    /* width: 25px;
+    height: 25px; */
+    /* display: block; */
+    /* border: 1px solid red; */
+    top: 25px;
+    right: 5%; 
+    display: none;
+}
+
 
 /* -----dropdown nav----- */
 
@@ -568,4 +582,96 @@ p{
 .s-star {
     border: 1px solid #D10F78;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+/* --------rwd-------- */
+@media screen and (max-width: 1200px) {
+    html{
+    font-size: 40%;
+    }
+
+    .wrapper-2{
+        width: 100%;
+    }
+
+    .head-c{
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    header{
+        padding-top: 8px;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 8% 30px;
+    }
+
+    footer img{
+        width: 200px; 
+       
+    }
+
+    footer p{
+        padding-top: 40px;
+    }
+
+    h2{
+        /* font-size: 7rem; */
+    }
+
+    h5{
+       /* font-size: 2.5rem; */
+       line-height: 2; 
+    }
+
+    p{
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 980px){
+    
+    .wrapper{
+        margin-top: 70px;
+    }
+
+    header{
+        padding-top: 10px;
+        height: 70px;
+    }
+
+    .list{
+        /* display: none; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: #0c1e4b;
+        height: 100vh;
+        width: 200px;
+    }
+
+    .ham{
+        display: block;
+    }
+
+    .list > li{
+        margin: 5px 5px;
+        padding: 5px;
+    }
+
+    header .list > li > a{
+        width: 200px;
+        line-height: 3.5;
+    }
+
+    .list >li:last-child{
+        margin-right: 0;
+    }
+
+
 }

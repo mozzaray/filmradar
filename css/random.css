@@ -8,8 +8,9 @@
 }
 
 .banner-r{
-    width: 50%;
+    /* width: 50%; */
     background-image: url(../images/random-banner.jpg);
+    background-position: center center;
     height: 425px;
     display: inline-block;
 }
