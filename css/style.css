@@ -328,17 +328,23 @@ header .list > li > a{
 }
 
 /* ---hamburger--- */
+#hamburger{
+    /* border: 1px solid red; */
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
 .ham{
     color: white;
     position: absolute;
     font-size: 3rem;
-    /* width: 25px;
-    height: 25px; */
-    /* display: block; */
-    /* border: 1px solid red; */
     top: 25px;
     right: 5%; 
     display: none;
+    margin-right: 5px;
+    
 }
 
 
@@ -484,7 +490,7 @@ footer a{
 }
 
 footer p{
-    font-size: 10px;
+    font-size: 1.25rem;
     clear: both;
     text-align: center;
     padding-top: 50px;
@@ -634,7 +640,9 @@ p{
 }
 
 @media screen and (max-width: 980px){
-    
+    html{
+        font-size: 30%;
+    }
     .wrapper{
         margin-top: 70px;
     }
@@ -645,7 +653,7 @@ p{
     }
 
     .list{
-        /* display: none; */
+        display: none;
         flex-direction: column;
         position: absolute;
         right: 0;
@@ -655,23 +663,107 @@ p{
         width: 200px;
     }
 
+    .list.active{
+        display: block;
+    }
+
     .ham{
         display: block;
     }
 
     .list > li{
-        margin: 5px 5px;
+        margin: 5px 0;
         padding: 5px;
     }
 
     header .list > li > a{
         width: 200px;
         line-height: 3.5;
+        text-align: center;
+        margin: 0;
     }
 
     .list >li:last-child{
         margin-right: 0;
     }
 
+    .drop{
+        /* display: block; */
+        top: 0;
+        border-radius: 0;
+        line-height: 3;
+        left: -150px;
+        margin-right: 0;
+        margin-left: auto;
+        background-color: #061334;
+        width: 150px;
+    }
+
+    .drop li a{
+       text-align: center;
+       width: auto;
+    }
+
+    .btn-big {
+        width: 120px;
+        
+    }
+}
+
+@media screen and (max-width: 680px){
+    html{
+        font-size: 25%;
+    }
+
+    footer{
+        padding: 20px 5% 20px;
+    }
+
+    footer img{
+        width: 150px;
+    }
+
+    footer p{
+        padding: 30px 50px 0;
+    }
+
+    .base{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 414px){
+    html{
+        font-size: 20%;
+    }
+    .wrapper{
+        margin-top: 50px;
+    }
+    header{
+        height: 60px;
+        padding-top: 5px;
+    }
+    
+    header img{
+        width: 100px;
+        padding-top: 5px;
+        
+    }
+
+    footer img{
+        width: 150px;
+    }
+
+    .base > li{
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        padding: 20px 50px 0;
+    }
+
+    .list{
+        top: 50px;
+    }
 
 }

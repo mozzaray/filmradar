@@ -269,6 +269,7 @@ footer a{
 
     .c-block{
         margin-left: 60%;
+        /* width: 80%; */
     }
 
     h2{
@@ -283,4 +284,166 @@ footer a{
     .img5{
         margin-top: -100px;
     }
+
+    .btn-big{
+        margin-top: 118px;
+    }
 }
+
+@media screen and (max-width: 768px){
+    .txt-2{
+        margin: -111px auto 0;
+    }
+
+
+    .img4{
+        margin-top: -9px;
+    }
+    
+    .img5{
+        margin-top: -68px;
+    }
+
+    .txt-3 h2 {
+        /* font-size: 7rem; */
+        width: 63%;
+        margin-top: -130px;
+    }
+
+    .txt-4{
+        flex-direction: column;
+        margin: -36px auto 60px;
+    }
+
+    .txt-4 li{
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        flex-basis: 60%;
+        margin: 20px 0;
+    }
+
+    .txt-4 li:nth-child(2){
+        margin: 0;
+    }
+
+    .txt-4 li img{
+        width: 200px;
+    }
+
+    .txt-4 p{
+        padding: 0 50px;
+        line-height: 2;
+    }
+
+    .number{
+        margin-right: 5%;
+    }
+    .number img{
+        width: 80%;
+    }
+
+    .cta h3{
+        line-height: 2;
+    }
+    
+    .c-block{
+        width: 40%;
+        height: 30%;
+        margin-top: -73px;
+    }
+
+    .b2{
+        margin: 87px auto 0;
+    }
+
+    .txt-3 h2 {
+        width: 70%;
+        margin-top: -100px;
+    }
+
+    .txt-4 li img{
+        width: 120px;
+        margin: 10px 0;
+    }
+
+    .txt-4 p{
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 414px){
+    .txt-1{
+        margin: -268px auto 0;
+    }
+
+    .ls {
+        letter-spacing: 13px;
+    }
+
+    .btn-big{
+        margin-bottom: 17px;
+        margin-top: 149px;
+    }
+
+    h2{
+        margin-bottom: 5px;
+    }
+
+    .b2{
+        margin: 47px auto 0;
+    }
+
+    .c-block {
+        height: 23%;
+        margin-top: -61px;
+    }
+
+    .txt-2 {
+        margin: -241px auto 0;
+    }
+
+    .txt-2 h2{
+        margin-bottom: 10px;
+    }
+
+    .txt-2 h5{
+        width: 55%;
+        line-height: 1.5;
+    }
+
+    .img3{
+        margin-top: -38px;
+    }
+
+    .txt-3 h2{
+        margin-top: -68px;
+        margin-left: 18%;
+
+    }
+
+    .txt-4{
+        margin: -83px auto 30px;
+    }
+
+    .txt-4 li{
+        padding: 20px 19px;
+    }
+
+    .txt-5{
+        flex-direction: column;
+    }
+
+    .cta {
+        width: 72%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cta .btn-big{
+        margin: 30px auto;
+    }
+
+}
+
