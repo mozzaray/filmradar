@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hp.css">
     
-    <title>首頁</title>
+    <title>院線雷達</title>
 </head>
 <body>
      <!-- header -->
@@ -25,6 +25,11 @@
             <a href="index.html">
                 <img src="images/logo-white.svg" alt="logo">
             </a>
+
+            <div id="hamburger">
+                <i class="fa-solid fa-bars ham"></i>
+            </div>
+            
             <ul class="list">
                 <li><a href="hp.html">院線雷達</a></li>
                 <li><a href="list.html">電影雷達</a></li>
@@ -58,7 +63,7 @@
             <div class="line"></div>
         </div>
         
-        <div class=" flex">
+        <div class="in-cine-container">
             <aside>
                 <ul class="in-cine">
                     <li><h6>星際異攻隊</h6></li>
@@ -68,7 +73,7 @@
                 </ul>
             </aside>
 
-            <div class="cine-main col-9">
+            <div class="cine-main">
                 <img src="images/hp1-1.jpg" alt="">
 
                 <div class="flex-2">
@@ -78,7 +83,7 @@
                 </div>  
             </div>
         </div>
-        <div class="cine-des col-5">
+        <div class="cine-des">
             <h6 class="bold">星際異攻隊</h6>
             <p>影迷私心最愛的全宇宙最無厘頭組合「星際異攻隊」正式重返大銀幕！但這次的團隊氛圍變得有點不一樣，仍未忘懷失去心愛葛摩菈傷痛的「星爵」彼得，必須再度團結身邊的全體隊員守護宇宙，並且擔起保護其中一員的關鍵任務，若稍有不慎，就可能導致星際異攻隊走向全軍覆沒的窮途末路！</p>
         </div> 
@@ -102,29 +107,35 @@
                     <a href="">
                         <img src="images/hp2-1.jpg" alt="boogy">
                     </a>
+                    <p>6月2日</p>
                     <h6>鬼出櫃</h6>
-                    <h6>6月2日</h6>
+                    
                 </li>
                 <li class="cs-pos space">
                     <a href="">
                         <img src="images/hp2-2.jpg" alt="boogy">
                     </a>
+                    <p>6月2日</p>
                     <h6>閃電俠</h6>
-                    <h6>6月2日</h6>
+                    
                 </li>
                 <li class="cs-pos space">
                     <a href="">
                         <img src="images/hp2-3.jpg" alt="boogy">
                     </a>
+                    <p>6月2日</p>
                     <h6>蜘蛛人：新宇宙</h6>
-                    <h6>6月2日</h6>
+                    
                 </li>
                 <li class="cs-pos space">
+                    
                     <a href="">
                         <img src="images/hp2-4.jpg" alt="boogy">
                     </a>
-                    <h6>印第安納瓊斯之命運鐘盤</h6>
-                    <h6>6月2日</h6>
+                    <p>6月2日</p>
+                    <h6>印第安納瓊斯： <br>
+                        命運輪盤</h6>
+                    
                 </li>
                 <li class="cs-pos">
                     <div class="month">
@@ -134,16 +145,17 @@
                     <a href="">
                         <img src="images/hp2-5.jpg" alt="boogy">
                     </a>
+                    <p>7月21日</p>
                     <h6>奧本海默</h6>
-                    <h6>7月21日</h6>
+                    
                 </li>
                 <li class="cs-pos space">
-                    <div class="month"></div>
                     <a href="">
                         <img src="images/hp2-6.jpg" alt="boogy">
                     </a>
+                    <p>7月21日</p>
                     <h6>芭比</h6>
-                    <h6>7月21日</h6>
+                   
                 </li>
             </ul>
 
@@ -165,7 +177,8 @@
 
             <div class="blog">
                 <div class="blog-left">
-                    <img src="images/hp-1.png" alt="">
+                    <img src="images/hp-1.png" alt="" class="blog-l-img">
+                    <img src="images/hp-1_mobile.jpg" alt="" class="blog-l-img-mob">
                 
                     <div class="txt-blog">
                         <h6 class="bold">影壇話題</h6>
@@ -179,7 +192,9 @@
 
                  <div class="blog-right">
                     <div class="txt-blog-h">
-                        <img src="images/hp-2.png" alt="">
+                        <img src="images/hp-2.png" alt="" class="blog-h-img">
+                        <img src="images/hp-2_mobile.jpg" alt="" class="blog-h-img_mobile">
+
                         <div class="txt-blog-r">
                             <h6 class="bold">影評精選</h6>
                             <p>探索電影的多重層面，感受專業評論的洞察力。透過精選影評，揭開每部電影的魅力與意義，帶你進入更深入的觀影體驗。</p>
@@ -192,7 +207,9 @@
                     </div>
 
                     <div class="txt-blog-h">
-                        <img src="images/hp-3.png" alt="">
+                        <img src="images/hp-3.png" alt="" class="blog-h-img">
+                        <img src="images/hp-3_mobile.jpg" alt="" class="blog-h-img_mobile">
+
                         <div class="txt-blog-r">
                             <h6 class="bold">影評精選</h6>
                             <p>探索電影的多重層面，感受專業評論的洞察力。透過精選影評，揭開每部電影的魅力與意義，帶你進入更深入的觀影體驗。</p>
@@ -251,5 +268,12 @@
         </div>
        <p>本網站為緯育TibaMe前端工程師班第85期學員專題作品，本平台僅供學習、展示之用</p>
     </footer>
+
+
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+
 </body>
 </html>

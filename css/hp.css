@@ -1,9 +1,11 @@
-
-
 /* -----now in cinema---- */
 .wrapper-2 > h4:first-child
 .in-cine{
     /* border: 1px solid red; */
+}
+
+.in-cine-container{
+    display: flex;
 }
 
 .cine{
@@ -33,7 +35,7 @@
     /* border: 1px solid red; */
     margin-left: 10px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: flex-start;
     margin-top: -70px;
     
@@ -44,23 +46,24 @@
     position: relative;
     z-index: 4;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    height: 450px;
 }
 
 /* small poster */
 .flex-2{
     display: flex;
     justify-content: space-between;
- 
     /* border: 1px solid green; */
     align-items: flex-end;
-    /* flex-direction: row-reverse; */
-    margin-right: -5px;
-    margin-left: auto;
-    margin-top: 35px;
+    margin-left: 43px;
+    margin-top: 5px;
 }
 
 .flex-2 img{
     display: block;
+    height: 230px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+
 }
 
 .ps{
@@ -82,9 +85,10 @@
 .cine-des{
     /* border: 1px solid red; */
     margin-left: auto;
-    margin-right: 0;
-    margin-top: -220px;
+    margin-right: 60px;
+    margin-top: -197px;
     padding-right: 20px;
+    width: 42%;
 }
 
 .cine-des h6{
@@ -96,14 +100,16 @@
 .cs{
     /* border: 1px solid red; */
     width: 100%;
-    padding: 0 58px;
+    padding: 0 2%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .cs-pos{
     /* border: 1px solid blue; */
     flex-basis: 284px;
+    margin: 0 5px;
     
 }
 
@@ -113,15 +119,17 @@
 }
 
 .cs-pos > h6{
-    letter-spacing: initial;
-    font-family: 'Mochiy Pop One', sans-serif;
+    margin: 5px 0;
+    /* font-family: 'Mochiy Pop One', sans-serif; */
     line-height: 1.25;
-}
-
-.cs-pos > h6:last-child{
+    font-weight: 500;
     color: #06236C;
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight: bold;
+
+}
+
+.cs-pos > p{
+    color: #666;
 }
 
 .month{
@@ -132,8 +140,8 @@
 
 .rec{
     background-color: #D10F78;
-    width: 28px;
-    height: 56px;
+    width: 20px;
+    height: 40px;
     border-radius: 0 20px 0 0 ;
     margin-right: 10px;
 }
@@ -145,7 +153,7 @@
 }
 
 .space{
-    padding-top: 66px;
+    padding-top: 50px;
 }
 
 
@@ -157,8 +165,16 @@
 
 .blog-left{
     /* border: 1px solid red; */
-    flex-basis: 488px;
+    flex-basis: 40%;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+
+.blog-l-img{
+    width: 100%;
+}
+
+.blog-l-img-mob{
+    display: none;
 }
 
 .txt-blog{
@@ -176,11 +192,9 @@
 .blog-right{
     /* border: 1px solid blue; */
     margin-left: 20px;
+    flex-basis: 60%;
 }
 
-.blog-left{
-
-}
 
 .txt-blog-h{
     display: flex;
@@ -191,9 +205,14 @@
     /* border: 1px solid blue; */
 }
 
-.txt-blog-h img{
+.blog-h-img{
     width: 334px;
+    display: block;
     
+}
+
+.blog-h-img_mobile{
+    display: none;
 }
 
 .blog a{
@@ -218,3 +237,136 @@
     margin-top: 20px;
 }
 
+/* ----------rwd --------- */
+@media screen and (max-width: 1200px){
+    .cine-des{
+        margin-right: -3%;
+
+    }
+
+    .blog-h-img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .flex-2{
+        margin-left: 2%;
+    }
+
+    .cine-des{
+        width: 37%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px){
+    .in-cine{
+        display: flex;
+
+    }
+
+    .cine-main{
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .in-cine-container{
+        flex-direction: column;
+    }
+
+    .in-cine li{
+        border-bottom: 0;
+        border-right: 1px solid #D10F78;
+
+    }
+
+    .in-cine li:last-child{
+        border-right: none;
+    }
+
+    .cine-des{
+        width: 50%;
+    }
+
+    .txt-blog-r{
+        padding: 12px 30px
+    }
+
+    .blog-h-img{
+        display: none;
+    }
+
+    .blog-h-img_mobile{
+        display: block;
+        width: 39%;
+    }
+ 
+}
+
+@media screen and (max-width: 680px){
+    .flex-2 img{
+        height: 195px;
+    }
+
+    .cine-main > img{
+        height: 370px;
+
+    }
+
+    .cine-des{
+        margin-top: -152px;
+    }
+
+    .blog-h-img_mobile{
+        display: block;
+        width: 40%;
+    }
+
+    .blog{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .flex-2{
+        display: none;
+    }
+
+    .cine-des{
+        width: 60%;
+        margin: 30px auto 0; 
+        padding: 0;
+    }
+
+    .wrapper{
+        margin-top: -36px;
+
+    }
+
+    .blog{
+        display: block;
+    }
+
+    .blog-left{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .blog-l-img{
+        display: none;
+    }
+
+    .blog-l-img-mob{
+        display: block;
+        width: 40%;
+    }
+
+    .blog-right{
+        margin-left: 0;
+    }
+
+}

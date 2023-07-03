@@ -219,7 +219,7 @@ footer a{
     }
 
     .txt-3 h2{
-        width: 55%;
+        width: 60%;
     }
 
     .txt-4{
@@ -379,7 +379,7 @@ footer a{
     }
 
     .ls {
-        letter-spacing: 13px;
+        letter-spacing: 9px;
     }
 
     .btn-big{
@@ -411,6 +411,7 @@ footer a{
     .txt-2 h5{
         width: 55%;
         line-height: 1.5;
+        letter-spacing: 2px;
     }
 
     .img3{
@@ -428,7 +429,13 @@ footer a{
     }
 
     .txt-4 li{
-        padding: 20px 19px;
+        padding: 20px 10px;
+        min-height: 160px;
+    }
+
+    .txt-4 p{
+        padding: 0px;
+        padding-left: 20px;
     }
 
     .txt-5{
