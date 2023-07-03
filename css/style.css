@@ -354,11 +354,12 @@ header .list > li > a{
     display: none;
     background-color: #fff;
     background-color: #06236c;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: -5px;
-  
+    /* border: 1px solid red; */
+    padding-top: 10px;
 
 }
 .drop li{
@@ -366,7 +367,6 @@ header .list > li > a{
 }
 
 .drop li a{
-    
     color: #fff;
     display: block;
     line-height: 2.5;
@@ -592,7 +592,7 @@ p{
 
 
 /* --------rwd-------- */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px){
     html{
     font-size: 40%;
     }
@@ -626,6 +626,11 @@ p{
         padding-top: 40px;
     }
 
+    nav ul{
+        width: 100%;
+        padding: 0 5%;
+    }
+
     /* -----assets ------*/
     .line{
         width: auto;
@@ -633,6 +638,20 @@ p{
 
     .bar{
         width: auto;
+    }
+
+    .tag-list{
+        width: auto;
+    }
+
+    .search{
+        width: auto;
+        /* height: 50%; */
+    }
+
+    .search button i{
+        font-size: 3.5rem;
+        line-height: 1;
     }
 
     h2{
@@ -712,23 +731,52 @@ p{
         margin-left: auto;
         background-color: #061334;
         width: 150px;
+        border: 1px solid;
     }
 
     .drop li a{
        text-align: center;
        width: auto;
+       
     }
 
     .btn-big {
         width: 120px;
         
     }
+
+  
 }
 
 @media screen and (max-width: 768px){
     aside{
         width: 100%;
     }
+
+    .search{
+        height: 36px;
+    }
+
+    .search button i{
+        line-height: 1;
+    }
+
+    .filter{
+        margin-bottom: 24px;
+        padding: 0 4%;
+
+    }
+
+    .filter h6{
+        margin-right: 4%;
+        font-size: 2rem;
+    }
+
+    .f-img{
+        width: 20%;
+    }
+
+
 }
 
 @media screen and (max-width: 680px){
@@ -790,5 +838,15 @@ p{
     .list{
         top: 60px;
     }
+
+}
+
+
+@media screen and (max-width: 376px){
+    .filter h6{
+        margin-right: 2%;
+        font-size: 1rem;
+    }
+
 
 }

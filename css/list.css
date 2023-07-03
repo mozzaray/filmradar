@@ -1,8 +1,3 @@
-
-
-
-
-
 /* ---------aside------- */
 
 /* .search {
@@ -75,5 +70,35 @@
     color: #B5B5B5;
     margin-top: 5px;
     line-height: 1;
+
+}
+
+
+/* -------rwd------- */
+@media screen and (max-width: 1200px){
+    .film{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .film-list{
+        margin-left: 10px;
+    }
+    
+    .film{
+        width: 31%;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .film:nth-child(3n){
+        margin: 0;
+        
+    }
+
+    .flex{
+        flex-direction: column;
+    }
 
 }

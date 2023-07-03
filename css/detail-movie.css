@@ -166,6 +166,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .subgallery img{
@@ -374,7 +375,8 @@
     margin: 40px auto 0;
     display: block;
     width: 100px;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .cir{
@@ -395,7 +397,56 @@
     display: inline-block;
 }
 
+@media screen and (max-width: 1200px){
+    .score{
+        margin-left: 33px;
+        width: 30%;
+    }
 
+    .about{
+        margin-top: -34px;
+    }
+
+    .gallery{
+        margin-top: 72px;
+    }
+
+    .subgallery img{
+        width: 49%;
+    }
+
+    .crew{
+        flex-basis: 321px;
+    }
+
+    .crew img{
+        width: 34%;
+        flex-basis: 139px;
+    }
+
+    .gallery2{
+        margin-top: 36px;
+    }
+
+    .sub-rw{
+        margin-bottom: 20px;
+    }
+
+    .sub-rec{
+        flex-basis: 234px;
+    }
+
+    .cir, .cir2{
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew a{
+        flex-basis: 321px;
+        width: auto;
+    }
+    
+}
 
 
 
