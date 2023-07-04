@@ -429,7 +429,7 @@ nav a{
     display: block;
     line-height: 2px;
     text-align: center;
-    
+    display: block;
 }
 
 nav a:hover{
@@ -834,6 +834,19 @@ p{
         line-height: 4.5;
     }
 
+    nav{
+        top: 60px;
+    }
+
+    nav ul{
+        padding: 0 3%;
+        justify-content: space-around;
+    }
+
+    nav li{
+        margin: 0;
+    }
+
     footer img{
         width: 150px;
     }
@@ -859,5 +872,6 @@ p{
         font-size: 1rem;
     }
 
+    
 
 }
