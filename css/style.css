@@ -740,6 +740,10 @@ p{
        
     }
 
+    nav{
+        top: 70px;
+    }
+
     .btn-big {
         width: 120px;
         
@@ -776,6 +780,13 @@ p{
         width: 20%;
     }
 
+    .tag-list{
+        justify-content: flex-start;
+    }
+
+    .tag{
+        flex-grow: 0;
+    }
 
 }
 
