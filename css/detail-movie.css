@@ -108,22 +108,51 @@
     flex-basis: 30%;
 }
 
+.bb-left-s{
+    flex-basis: 30%;
+    width: 30%;
+}
+
 .bb-right{
     flex-basis: 60%;
 
+}
+
+.bb-right-s{
+    flex-basis: 60%; 
 }
 
 .poster img{
    width: 100%;
 }
 
-.poster-pic img{
-    display: inline-block;
+.poster-pic{
     width: 100%;
 }
 
+.s-season{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.s-season img{
+    display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.season-prev, .season-next{
+    cursor: pointer;
+}
+
 .poster-pic > img{
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
 }
 
 
@@ -183,6 +212,11 @@
     margin-top: 52px;
     padding: 5%;
     
+}
+
+.about-s{
+    margin-top: 52px;
+    padding: 5%;
 }
 
 /* ------photo----- */
@@ -426,12 +460,14 @@
 
 .rec{
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
+   width: 100%;
+   /* height: auto; */
 }
 
 .sub-rec{
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .25);
-    flex-basis: 284px;
+    /* width: 100%; */
 }
 
 .sub-rec img{
@@ -461,14 +497,19 @@
 
 }
 
-.cir-box{
+.rec-cont{
+    width: 100%;
+}
+
+/* .cir-box{
     margin: 40px auto 0;
     display: block;
     width: 100px;
     display: flex;
     justify-content: center;
-}
+} */
 
+/* 
 .cir{
     width: 13px;
     height: 13px;
@@ -485,11 +526,45 @@
     background-color: #06236c;
     opacity: .3;
     display: inline-block;
+} */
+
+/* -------swiper------- */
+.swiper-pagination-bullet-active{
+    /* width: 13px;
+    height: 13px;
+    border-radius: 20px; */
+    background-color: #06236c;
+    display: inline-block;
+    margin-right: 10px;
 }
 
+
+.swiper-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-pagination{
+    position: relative;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: white;
+}
+
+/* -----------rwd------------ */
 @media screen and (max-width: 1200px){
     /* movie */
-    .banner-m{
+    .banner-m, .banner-s{
         height: 559px;
     }
    
@@ -497,9 +572,6 @@
         margin-top: 72px;
     }
 
-    .subgallery{
-        justify-content: flex-start; 
-    }
     .subgallery-b{
         width: 48%;
         margin-right: 10px;
@@ -532,12 +604,16 @@
         margin-top: 36px;
     }
 
+    .gallery-s{
+        margin-top: 140px;
+    }
+
     .sub-rw{
         margin-bottom: 20px;
     }
 
     .sub-rec{
-        flex-basis: 24%;
+        /* flex-basis: 24%; */
     }
 
     .cir, .cir2{
@@ -545,6 +621,16 @@
         height: 10px;
     }
 
+    .rec-txt{
+        display: block;
+        padding: 10px 20px;
+    }
+
+    /* serie */
+    .bb-right-s {
+        flex-basis: 59%;
+        margin-left: 30px;
+    }
    
     
 }
@@ -564,6 +650,10 @@
 
     .bb-left{
         flex-basis: 38%;
+    }
+
+    .bb-left-s{
+        width: 38%;
     }
 
     .bb-right{
@@ -619,6 +709,14 @@
         margin: 0;
     }
 
+    /* .rec-txt{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+    } */
+
+    
     
 }
 
@@ -639,6 +737,18 @@
 
     .about{
         margin-top: 25px;
+    }
+
+    .subgallery{
+        display: block;
+    }
+
+    .subgallery-1, .subgallery-2, .subgallery-3{
+        margin-bottom: 10px;
+    }
+
+    .subgallery-4 a{
+        height: 50px;
     }
 
     .sub-rw{
@@ -676,16 +786,13 @@
     }
 
     .sub-rec{
-        flex-basis: 32%;
+        /* flex-basis: 32%; */
     }
 
-    .sub-rec:last-child{
+    /* .sub-rec:last-child{
         display: none;
-    }
-    .rec-txt{
-        display: block;
-        padding: 10px 20px;
-    }
+    } */
+
 }
 
 @media screen and (max-width: 414px){
@@ -693,7 +800,7 @@
         margin: 105px auto 0;
     }
 
-    .banner-m{
+    .banner-m, .banner-s{
         height: 72vh;
     }
 
@@ -711,13 +818,53 @@
 
     .ban-container{
         flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .poster{
+    .poster, .poster-s{
         display: none;
     }
 
     .gallery{
         margin-top: 141px;
     }
+
+    .gallery-s{
+        margin-top: 112px;
+    }
+
+    .crew-img{
+        width: 64%;
+    }
+
+    .t-block h6{
+        padding: 5px;
+    }
+
+    .user{
+        padding: 0 0 10px;
+    }
+
+    .your-rw{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .banner-m, .banner-s{
+        height: 100vh;
+    }
+
+    .score{
+        display: block;
+    }
+
+    .about{
+        margin-top: 73px;
+    }
+
+    .gallery{
+        margin-top: 150px;
+    }
+
 }

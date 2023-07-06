@@ -156,6 +156,10 @@
     padding-top: 50px;
 }
 
+.my-prev, .my-next{
+    cursor: pointer;
+}
+
 
 /* ---------blog--------- */
 .blog{

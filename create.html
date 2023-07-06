@@ -30,6 +30,9 @@
             <a href="index.html">
             <img src="images/logo-white.svg" alt="logo">
             </a>
+            <div id="hamburger">
+                <i class="fa-solid fa-bars ham"></i>
+            </div>
             <ul class="list">
                 <li><a href="hp.html">院線雷達</a></li>
                 <li><a href="list.html">電影雷達</a></li>
@@ -64,37 +67,39 @@
     <!-- description -->
     <section class="wrapper-2">
         <form action="" class="form">
-            <div>
-                <label for="">片單名稱</label>
-                <input type="text">
+            <div class="flex-form">
+                <div class="left">
+                    <label for="">片單名稱</label>
+                    <input type="text">
+        
+                    <label for="">請為片單輸入5個tag</label>
+                    <span>請以逗號分隔</span>
+                    <input type="text">
     
-                <label for="">請為片單輸入5個tag</label>
-                <span>請以逗號分隔</span>
-                <input type="text">
+                </div>
     
-                <label for="">片單敘述</label>
-                <textarea name="" id="" cols="47" rows="8"></textarea>
+                <div class="right">
+                    <label for="">隱私設定</label>
+                    <select name="privacy" id="">
+                        <option value="public">公開</option>
+                        <option value="personal">私人</option>
+                        <option value="f-only">追蹤者限定</option>
+                    </select>
     
-
+                    <label for="">片單排序</label>
+                    <select name="sort" id="">
+                        <option value="">熱門度</option>
+                        <option value="saab">年分</option>
+                        <option value="saab">類別</option>
+                        <option value="mercedes">加入時間</option>
+                        <option value="mercedes">手動</option>
+                    </select>
+                </div>
             </div>
+            
 
-            <div class="right">
-                <label for="">隱私設定</label>
-                <select name="privacy" id="">
-                    <option value="public">公開</option>
-                    <option value="personal">私人</option>
-                    <option value="f-only">追蹤者限定</option>
-                </select>
-
-                <label for="">片單排序</label>
-                <select name="sort" id="">
-                    <option value="">熱門度</option>
-                    <option value="saab">年分</option>
-                    <option value="saab">類別</option>
-                    <option value="mercedes">加入時間</option>
-                    <option value="mercedes">手動</option>
-                </select>
-            </div>
+            <label for="">片單敘述</label>
+            <textarea name="" id="" cols="47" rows="8"></textarea>
            
         </form>
        
@@ -291,5 +296,8 @@
        <p class="txt-white">本網站為緯育TibaMe前端工程師班第85期學員專題作品，本平台僅供學習、展示之用</p>
     </footer>
     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/style.js"></script>
 </body>
 </html>

@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="bookmark" href="images/favicon.ico" />
 
@@ -97,8 +99,8 @@
             <div class="line"></div>
         </div>
 
-        <div>
-            <ul class="cs">
+        <div class="">
+            <ul class="cs owl-carousel owl-theme">
                 <li class="cs-pos">
                     <div class="month">
                         <div class="rec"></div>
@@ -157,16 +159,44 @@
                     <h6>芭比</h6>
                    
                 </li>
+                <li class="cs-pos space">
+                    <a href="">
+                        <img src="images/hp2-6.jpg" alt="boogy">
+                    </a>
+                    <p>7月21日</p>
+                    <h6>芭比</h6>
+                   
+                </li>
+                <li class="cs-pos space">
+                    <a href="">
+                        <img src="images/hp2-6.jpg" alt="boogy">
+                    </a>
+                    <p>7月21日</p>
+                    <h6>芭比</h6>
+                   
+                </li>
+                <li class="cs-pos space">
+                    <a href="">
+                        <img src="images/hp2-6.jpg" alt="boogy">
+                    </a>
+                    <p>7月21日</p>
+                    <h6>芭比</h6>
+                   
+                </li>
             </ul>
-
+           
             <div class="bar">
-                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-left my-prev"></i>
                 <div class="bar-line"></div>
-                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angle-right my-next"></i>
             </div>
 
-        </div>
+            <!-- <div class="owl-nav">
+                <div class="owl-prev">prev</div>
+                <div class="owl-next">next</div>
+            </div> -->
 
+        </div>
 
     </section>
 
@@ -273,7 +303,42 @@
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="js/style.js"></script>
+    <script>
+         $(".cs").owlCarousel({
+       
+       nav: false,
+       slideTransition: 'ease',
+       responsive:{
+           0:{
+               items:1,
+               touchDrag: true
+           },
+           500:{
+               items:3,
+               touchDrag: true
+   
+           },
+           1000:{
+               items:6
+               
+           }
+        }
+         });
 
+         var owl = $('.cs');
+       owl.owlCarousel();
+       // Go to the next item
+       $('.my-next').click(function() {
+           owl.trigger('next.owl.carousel');
+       })
+       // Go to the previous item
+       $('.my-prev').click(function() {
+           // With optional speed parameter
+           // Parameters has to be in square bracket '[]'
+           owl.trigger('prev.owl.carousel', [300]);
+       })
+    </script>
 </body>
 </html>

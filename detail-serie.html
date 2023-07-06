@@ -11,6 +11,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="bookmark" href="images/favicon.ico" />
 
@@ -101,15 +105,28 @@
             <p class=" info-p txt-white">2016 - 2013 劇情 3季</p>
     
             <div class="ban-container">
-                <div class="bb-left">
+                <div class="bb-left-s">
 
-                    <div class="poster-s">
-                        <i class="fa-solid fa-angle-left"></i>
-                        <div class="poster-pic">
-                            <img src="images/ds-poster.jpg" alt="kim1" class="cmbyn">
+                    <div class="poster-s swiper mySwiper">
+                        <!-- <i class="fa-solid fa-angle-left season-prev"></i> -->
+                        <ul class="poster-pic swiper-wrapper">
+                            <li class="s-season swiper-slide">
+                                <img src="images/ds-poster.jpg" alt="kim1" class="">
 
-                        </div>
-                        <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="s-season swiper-slide">
+                                <img src="images/ds-poster-2.jpg" alt="kim1" class="">
+
+                            </li>
+                            <li class="s-season swiper-slide">
+                                <img src="images/ds-poster-3.jpg" alt="kim1" class="">
+
+                            </li>
+                          
+                        </ul>
+                        <!-- <i class="fa-solid fa-angle-right season-next"></i> -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                     <div class="log-btn">
                         <a href="" class="btn-small">登入評論</a>
@@ -117,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="bb-right">
+                <div class="bb-right-s">
                     <div class="score">
                         <div class="score-star">
                             <img src="images/dm-star.png" alt="star">
@@ -128,7 +145,7 @@
                            
                     </div>
 
-                    <div class="about">
+                    <div class="about-s">
                         <h6 class="bold">第一季</h6>
                         <p>
                             想要贏了任何人的男醫生姜東柱和想要獲得認可的女醫生尹書靜，遇到怪才醫生金師傅之後，領悟到人生價值和愛情的人性故事。        
@@ -400,52 +417,97 @@
                 <h4>推薦電影</h4>
                 <div class="line"></div>
 
-                <div class="rec">
-                    <div class="sub-rec">
-                        <img src="images/dm-rec.jpg" alt="">
-                        <div class="rec-txt">
-                            <h6>斷背山</h6>
-                            <div class="rec-num">
-                                <div class="s-star"></div>
-                                <h6>3.8</h6>
+                <div class="swiper mySwiper rec-cont">
+                    <ul class="rec swiper-wrapper">
+                        <li class="sub-rec swiper-slide ">
+                            <img src="images/dm-rec.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>斷背山</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.8</h6>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sub-rec">
-                        <img src="images/dm-rec2.jpg" alt="">
-                        <div class="rec-txt">
-                            <h6>月光下的藍色男孩</h6>
-                            <div class="rec-num">
-                                <div class="s-star"></div>
-                                <h6>3.7</h6>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec2.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>月光下的藍色男孩</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.7</h6>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sub-rec">
-                        <img src="images/dm-rec3.jpg" alt="">
-                        <div class="rec-txt">
-                            <h6>淑女鳥</h6>
-                            <div class="rec-num">
-                                <div class="s-star"></div>
-                                <h6>3.7</h6>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec3.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>淑女鳥</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.7</h6>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sub-rec">
-                        <img src="images/dm-rec4.jpg" alt="">
-                        <div class="rec-txt">
-                            <h6>丹麥女孩</h6>
-                            <div class="rec-num">
-                                <div class="s-star"></div>
-                                <h6>3.5</h6>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec4.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>丹麥女孩</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.5</h6>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec4.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>丹麥女孩</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.5</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec4.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>丹麥女孩</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.5</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec4.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>丹麥女孩</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.5</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-rec swiper-slide">
+                            <img src="images/dm-rec4.jpg" alt="">
+                            <div class="rec-txt">
+                                <h6>丹麥女孩</h6>
+                                <div class="rec-num">
+                                    <div class="s-star"></div>
+                                    <h6>3.5</h6>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="cir-box">
+                
+                <!-- <div class="cir-box">
                     <div class="cir"></div>
                     <div class="cir2"></div>
-                </div>
+                </div> -->
             
             </div>
     
@@ -497,6 +559,75 @@
 
 
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/style.js"></script>
+
+    <script>
+    //    $(".poster-pic").owlCarousel({
+    //         slideTransition: 'ease',
+    //         items: 1,
+    //         nav: false
+    //      });
+
+    //     var serie_pos = $('.poster-pic');
+    //     serie_pos.owlCarousel();
+    //     // Go to the next item
+    //     $('.season-next').click(function() {
+    //         serie_pos.trigger('next.owl.carousel');
+    //     })
+    //     // Go to the previous item
+    //     $('.season-prev').click(function() {
+    //         // With optional speed parameter
+    //         // Parameters has to be in square bracket '[]'
+    //         serie_pos.trigger('prev.owl.carousel');
+    //     })
+
+
+       
+
+        var swiper = new Swiper(".rec-cont", {
+        loop: true,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        speed: 700,
+        spaceBetween: 30,
+        autoHeight: true,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints:{
+           
+            // when window width is >= 320px
+                320: {
+                slidesPerView: 2,
+                slidesPerGroup: 2
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 2,
+                slidesPerGroup: 2
+                },
+                // when window width is >= 640px
+                980:{
+                slidesPerView: 4,
+                slidesPerGroup: 4
+            },
+        },
+        });
+
+        var swiper = new Swiper(".poster-s", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        // setWrapperSize: true,
+      },
+    });
+        
+    </script>
 </body>
 </html>
