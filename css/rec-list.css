@@ -1,17 +1,25 @@
 /* -----popular----- */
 
 .wrapper-2 > h4{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
-.pop-list{
-    
-
+.-sub{
+    opacity: .5;
+    height: 1px;
 }
 
 .pop{
     display: flex;
     margin-bottom: 20px;
+}
+
+.pop-img{
+    flex-basis: 80%;
+}
+
+.pop-img img{
+    width: 100%;
 }
 
 .rec-txt{
@@ -30,7 +38,7 @@
 }
 
 .list-name i{
-    font-size: 25px;
+    font-size: 24px;
     color: #D10F78;
 }
 
@@ -40,18 +48,28 @@
 
 .rec-txt p:last-child{
     margin-top: 30px;
+    width: 89%;
 }
 
 /* ---------banner-------- */
 
 .banner{
-    background-image: url(../images/rec-list-banner.jpg);
+    background-image: url(../images/rec-list-banner-2.jpg);
     width: 100%;
-    height: 427px;
-    padding: 150px 374px;
+    min-height: 427px;
+    /* padding: 150px 374px; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top left;
 }
 
-.banner > h3{
+.banner-txt{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+
+.banner-txt > h3{
     margin-bottom: 30px;
 }
 
@@ -92,4 +110,66 @@ aside{
 }
 
 
+/* ------------rwd----------- */
+@media screen and (max-width: 1200px){
+    .wrapper-2{
+        padding: 24px 5% 0;;
+    }
+
+    .banner{
+        background-position: top center;
+    }
+
+    .banner-txt{
+        width: auto;
+        padding: 130px 5% 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .list-name i{
+        font-size: 3rem;
+    }
+
+    .flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .u-list{
+        margin-left: 0;
+    }
+
+    aside{
+        background-color: rgba(255, 255, 255, .7);
+        top: 70px;
+    }
+
+    .users img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .pop{
+        flex-direction: column;
+    }
+
+    .rec-txt{
+        margin: 10px 20px;
+    }
+
+    .rec-txt p:last-child{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .num{
+        margin-bottom: 30px;
+    }
+
+    aside {
+        top: 60px;
+    }
+}
 

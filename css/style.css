@@ -83,6 +83,7 @@ aside{
     flex-grow: 1;
    
     flex-shrink: 0;
+    color: #0e0e0e;
 }
 
 .tag-list{
@@ -695,6 +696,8 @@ p{
         background-color: #0c1e4b;
         height: 100vh;
         width: 200px;
+
+        /* display: block; */
     }
 
     .list.active{
@@ -711,8 +714,8 @@ p{
     }
 
     header .list > li > a{
-        width: 200px;
-        line-height: 3.5;
+        /* width: 200px; */
+        line-height: 3.8;
         text-align: center;
         margin: 0;
     }
@@ -723,6 +726,7 @@ p{
 
     .drop{
         /* display: block; */
+
         top: 0;
         border-radius: 0;
         line-height: 3;
@@ -731,7 +735,9 @@ p{
         margin-left: auto;
         background-color: #061334;
         width: 150px;
-        border: 1px solid;
+        /* border: 1px solid; */
+        padding-top: 0px;
+
     }
 
     .drop li a{
@@ -765,12 +771,15 @@ p{
         line-height: 1;
     }
 
-    .filter{
+    .filter {
         margin-bottom: 24px;
         padding: 0 4%;
-
+        position: sticky;
+        top: 80px;
+        z-index: 7;
+        box-shadow: 0px 2px 5px rgba(255,255,255, .3);
     }
-
+       
     .filter h6{
         margin-right: 4%;
         font-size: 2rem;
@@ -792,7 +801,7 @@ p{
 
 @media screen and (max-width: 680px){
     html{
-        font-size: 37%;
+        /* font-size: 37%; */
     }
 
     footer{
@@ -814,7 +823,7 @@ p{
 
 @media screen and (max-width: 414px){
     html{
-        font-size: 29%;
+        /* font-size: 29%; */
     }
     .wrapper{
         margin-top: 50px;
@@ -831,7 +840,8 @@ p{
     }
 
     header .list > li > a{
-        line-height: 4.5;
+        line-height: 5.5;
+        font-size: 2.5rem;
     }
 
     nav{
@@ -861,7 +871,9 @@ p{
 
     .list{
         top: 60px;
+        width: 250px;
     }
+    
 
 }
 

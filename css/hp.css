@@ -373,4 +373,13 @@
         margin-left: 0;
     }
 
+    .cs-pos{
+        width: 73%;
+        margin: 0 auto;
+    }
+
+    .cs{
+        margin-bottom: 0;
+    }
+
 }

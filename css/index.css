@@ -69,6 +69,17 @@ body{
 
 .img6{
     width: 100%;
+    display: block;
+}
+
+.img6-2{
+    background-image: url(../images/index-6-2.jpg);
+    width: 100%;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 78px;
 }
 
 
@@ -288,6 +299,10 @@ footer a{
     .btn-big{
         margin-top: 118px;
     }
+
+    .img6-2{
+        background-position: center 68px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -306,7 +321,7 @@ footer a{
 
     .txt-3 h2 {
         /* font-size: 7rem; */
-        width: 63%;
+        width: 80%;
         margin-top: -130px;
     }
 
@@ -338,13 +353,19 @@ footer a{
 
     .number{
         margin-right: 5%;
+        width: 66%;
+    }
+
+    .number h2{
+        font-size: 7rem;
     }
     .number img{
-        width: 80%;
+        width: 66%;
     }
 
     .cta h3{
         line-height: 2;
+        font-size: 5rem;
     }
     
     .c-block{
@@ -357,10 +378,7 @@ footer a{
         margin: 87px auto 0;
     }
 
-    .txt-3 h2 {
-        width: 70%;
-        margin-top: -100px;
-    }
+ 
 
     .txt-4 li img{
         width: 120px;
@@ -431,11 +449,12 @@ footer a{
     .txt-4 li{
         padding: 20px 10px;
         min-height: 160px;
+        flex-direction: column;
     }
 
     .txt-4 p{
         padding: 0px;
-        padding-left: 20px;
+        padding: 10px 47px;
     }
 
     .txt-5{
@@ -450,6 +469,13 @@ footer a{
 
     .cta .btn-big{
         margin: 30px auto;
+    }
+
+    .img6-2{
+        background-image: url(../images/index-6-2_m.jpg);
+        background-position: center 58px;
+        /* background-size: 100%; */
+        min-height: 50vh;
     }
 
 }
