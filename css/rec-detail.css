@@ -47,12 +47,11 @@ nav a{
 .film{
     width: 207px;
     /* border: 1px solid red; */
-    margin-right: 30px;
-    margin-bottom: 35px;
+    margin: 0 10px 35px;
 }
 
 .film.film:nth-child(5n){
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 
@@ -78,4 +77,35 @@ nav a{
     margin-top: 5px;
     line-height: 1;
 
+}
+
+/* --------rwd------- */
+@media screen and (max-width: 1200px){
+    .film{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .filter{
+        position: inherit;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .list-name{
+        width: 100%;
+    }
+
+    .des .col-6{
+        width: 100%;
+    }
+
+    .film {
+        width: 26%;
+    }
+
+    .num{
+        margin-bottom: 30px;
+    }
 }

@@ -1,3 +1,6 @@
+.wrapper-2{
+    margin: 44px auto 0;
+}
 /* -----banner---- */
 
 .flex{
@@ -8,20 +11,31 @@
 }
 
 .banner-r{
-    /* width: 50%; */
-    background-image: url(../images/random-banner.jpg);
+    width: 100%;
+    background-image: url(../images/random-banner-test.jpg);
     background-position: center center;
-    height: 425px;
-    display: inline-block;
+    min-height: 400px;
+    background-size: cover;
+    /* display: inline-block; */
+    /* width: 100%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-h2{
-    display: inline-block;
+.banner-r h2{
+    display: block;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: bold;
-    color: #06236C;
+    color: white;
+    /* color: #06236C; */
     /* border: 1px solid brown; */
-    margin: -40px 0 0 20px;
+    /* margin: -40px 0 0 20px; */
+    /* mix-blend-mode: difference; */
+    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 160px 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, .7);
 }
 
 /* questions */
@@ -47,5 +61,26 @@ h2{
 }
 
 .btn-small{
-    margin-top: 20px;
+    /* margin-top: 20px; */
+}
+
+
+/* ------rwd------ */
+@media screen and (max-width: 1200px){
+    .banner-r h2{
+        padding: 160px 5%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper-2{
+        padding: 0 20%; 
+    }
+}
+
+@media screen and (max-width: 414px){
+    .wrapper-2{
+        padding: 0 5%; 
+    }
 }

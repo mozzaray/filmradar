@@ -805,7 +805,7 @@ p{
     }
 
     footer{
-        padding: 20px 5% 20px;
+        padding: 50px 5% 20px;
     }
 
     footer img{
@@ -840,7 +840,7 @@ p{
     }
 
     header .list > li > a{
-        line-height: 5.5;
+        line-height: 4.5;
         font-size: 2.5rem;
     }
 
