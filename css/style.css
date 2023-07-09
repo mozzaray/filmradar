@@ -737,6 +737,8 @@ p{
         line-height: 3.8;
         text-align: center;
         margin: 0;
+        width: auto;
+        line-height: 1.8;
     }
 
     .list >li:last-child{
@@ -762,7 +764,7 @@ p{
     .drop li a{
        text-align: center;
        width: auto;
-       
+       line-height: 3.5;
     }
 
     nav{
@@ -859,7 +861,7 @@ p{
     }
 
     header .list > li > a{
-        line-height: 4.5;
+        line-height: 2.5;
         font-size: 2.5rem;
     }
 
@@ -892,6 +894,11 @@ p{
         top: 60px;
         width: 250px;
     }
+
+    .list > li{
+        margin: 8px 0;
+    }
+
     
 
 }
