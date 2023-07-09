@@ -861,7 +861,8 @@ p{
     }
 
     header .list > li > a{
-        line-height: 2.5;
+        /* line-height: 2.5; */
+        line-height: 159.5%;
         font-size: 2.5rem;
     }
 
