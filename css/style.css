@@ -143,7 +143,7 @@ aside{
     height: 42px;
     width: 285px;
     display: flex;
-
+    background-color: #fff;
 }
 
 .search button{
@@ -294,7 +294,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 10px; */
+    padding-top: 10px;
 }
 
 header img{
@@ -309,8 +309,8 @@ header img{
 .list > li{
     margin: 0 20px;
     position: relative;
-    padding: 15px 10px;
-    
+    /* padding: 15px 10px;
+    width: 84px; */
 }
 
 .list >li:last-child{
@@ -322,11 +322,15 @@ header .list > li > a{
     color: #fff;
 
     font-size: 1rem;
-    line-height: 3;
+    line-height: 2;
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: 2rem; 
     text-align: center;
+    padding: 15px 10px;
+    width: 86px;
 }
+
+
 
 /* ---hamburger--- */
 #hamburger{
@@ -358,9 +362,12 @@ header .list > li > a{
     border-radius: 0 0 5px 5px;
     position: absolute;
     top: 60px;
-    left: -5px;
+    /* left: -5px; */
     /* border: 1px solid red; */
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    /* z-index: 3; */
+    top: 62px;
+    width: 86px;
 
 }
 .drop li{
@@ -372,12 +379,13 @@ header .list > li > a{
     display: block;
     line-height: 2.5;
     padding: 10px;
-    width: 100px;
+    /* width: 84px; */
     letter-spacing: 2px;
 
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .drop li:last-child{
@@ -388,6 +396,13 @@ header .list > li > a{
     display: block;
 }
 
+/* header hover */
+header li:hover {
+    background-color: #061334;
+}
+.drop li:last-child:hover{
+    border-radius: 0 0 5px 5px;
+}
 
 /* -------nav------ */
 
@@ -595,21 +610,25 @@ p{
 /* --------rwd-------- */
 @media screen and (max-width: 1200px){
     html{
-    font-size: 40%;
+    font-size: 45%;
     }
 
     .wrapper-2{
         width: auto;
-        padding: 10px 5% 0;
+        padding: 30px 5% 0;
     }
 
     .head-c{
         width: 100%;
-        padding: 0 5%;
+        padding: 8px 5%;
     }
 
     header{
-        padding-top: 8px;
+        padding-top: 4px;
+    }
+
+    .drop{
+        top: 58px;
     }
 
     footer{

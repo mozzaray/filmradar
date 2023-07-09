@@ -353,7 +353,7 @@ footer a{
 
     .number{
         margin-right: 5%;
-        width: 66%;
+        width: 48%;
     }
 
     .number h2{
@@ -472,10 +472,14 @@ footer a{
     }
 
     .img6-2{
-        background-image: url(../images/index-6-2_m.jpg);
-        background-position: center 58px;
+        background-attachment: scroll;
+        /* background-image: url(../images/index-6-2_m.jpg); */
+        width: 100%;
+        background-size: cover;
+        min-height: 200px;
+        background-position: center top;
         /* background-size: 100%; */
-        min-height: 50vh;
+        /* min-height: 50vh; */
     }
 
 }

@@ -365,18 +365,25 @@
                     </div>
 
                     <!-- your review -->
-                    <div class="col-6 your-rw">
-                        <img src="images/dm-user2.png" alt="">
-                        <div class="rw">
-                            <h6>留下你的評分</h6>
-                                <div class="stars">
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                </div>
+                    <div class="your-rw col-6">
+                        <div class="rw-star">
+                            <div class="rw-img">
+                                <img src="images/dm-user2.png" alt="">
+                            </div>
                             
+                             <div class="rw">
+                                <h6>留下你的評分</h6>
+                                <div class="stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rw-other">
                             <div class="rw-tag">
                                 <h6>請選擇或搜尋5個適合的tag</h6>
                                 <div class="search">
@@ -395,21 +402,19 @@
                                 <button class="tag">青春夢想</button>
                                 <button class="tag">自我發現</button>
                             </div>
-
+    
                             <div class="rw-tag2">
                                 <h6>留下你的評論</h6>
-
+    
                                 <textarea name="" id="" cols="50" rows="5" placeholder="按下enter送出評論"></textarea>
-
+    
                             </div>
-
+    
                             <a href="" class="btn-small float-r">送出評論</a>
-
                         </div>
+                        
 
-                    
-
-                </div>
+                    </div>
 
             </div>
 
@@ -424,7 +429,7 @@
                             <div class="rec-txt">
                                 <h6>斷背山</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.8</h6>
                                 </div>
                             </div>
@@ -434,7 +439,7 @@
                             <div class="rec-txt">
                                 <h6>月光下的藍色男孩</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.7</h6>
                                 </div>
                             </div>
@@ -444,7 +449,7 @@
                             <div class="rec-txt">
                                 <h6>淑女鳥</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.7</h6>
                                 </div>
                             </div>
@@ -454,7 +459,7 @@
                             <div class="rec-txt">
                                 <h6>丹麥女孩</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.5</h6>
                                 </div>
                             </div>
@@ -464,7 +469,7 @@
                             <div class="rec-txt">
                                 <h6>丹麥女孩</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.5</h6>
                                 </div>
                             </div>
@@ -474,7 +479,7 @@
                             <div class="rec-txt">
                                 <h6>丹麥女孩</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.5</h6>
                                 </div>
                             </div>
@@ -484,7 +489,7 @@
                             <div class="rec-txt">
                                 <h6>丹麥女孩</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.5</h6>
                                 </div>
                             </div>
@@ -494,7 +499,7 @@
                             <div class="rec-txt">
                                 <h6>丹麥女孩</h6>
                                 <div class="rec-num">
-                                    <div class="s-star"></div>
+                                    <i class="fa-solid fa-star"></i>
                                     <h6>3.5</h6>
                                 </div>
                             </div>
@@ -572,7 +577,8 @@
         slidesPerGroup: 4,
         speed: 700,
         spaceBetween: 30,
-        autoHeight: true,
+        // autoHeight: true,
+        setWrapperSize: true,
         freeMode: true,
         pagination: {
             el: ".swiper-pagination",
@@ -591,7 +597,7 @@
                 slidesPerGroup: 2
                 },
                 // when window width is >= 640px
-                980:{
+                680:{
                 slidesPerView: 4,
                 slidesPerGroup: 4
             },

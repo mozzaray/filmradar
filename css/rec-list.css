@@ -152,6 +152,19 @@ aside{
 }
 
 @media screen and (max-width: 414px){
+    .-bottom{
+        margin-top: 40px;
+    }
+    
+    .banner{
+        background-attachment: scroll;
+        min-height: 300px;
+    }
+
+    .banner-txt{
+        padding: 54px 5% 0;
+    }
+
     .pop{
         flex-direction: column;
     }
@@ -171,5 +184,7 @@ aside{
     aside {
         top: 60px;
     }
+
+
 }
 
