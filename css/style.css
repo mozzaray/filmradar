@@ -317,7 +317,7 @@ header img{
    margin-right: 0; 
 }
 
-header .list > li > a{
+header .list > li > a, span{
     display: block;
     color: #fff;
 
@@ -329,6 +329,11 @@ header .list > li > a{
     padding: 15px 10px;
     width: 86px;
 }
+
+span{
+    cursor: pointer;
+}
+
 
 
 
@@ -368,8 +373,12 @@ header .list > li > a{
     /* z-index: 3; */
     top: 62px;
     width: 86px;
-
 }
+
+.-open{
+    display: block;
+}
+
 .drop li{
     border-bottom: 0.2px solid #B5B5B5;
 }
@@ -387,6 +396,7 @@ header .list > li > a{
     font-size: 1.8rem;
     text-align: center;
 }
+
 
 .drop li:last-child{
     border-bottom: none;
@@ -686,12 +696,14 @@ p{
     p{
         line-height: 1.5;
     }
+
+  
 }
 
 
 @media screen and (max-width: 980px){
     html{
-        font-size: 38%;
+        font-size: 39%;
     }
     .wrapper{
         margin-top: 70px;
@@ -732,7 +744,7 @@ p{
         padding: 5px;
     }
 
-    header .list > li > a{
+    header .list > li > a, span{
         /* width: 200px; */
         line-height: 3.8;
         text-align: center;
@@ -746,7 +758,7 @@ p{
     }
 
     .drop{
-        /* display: block; */
+        display: none;
 
         top: 0;
         border-radius: 0;
@@ -818,6 +830,10 @@ p{
         flex-grow: 0;
     }
 
+    .page{
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 680px){
@@ -868,7 +884,7 @@ p{
         top: 19px;
     }
 
-    header .list > li > a{
+    header .list > li > a, span{
         line-height: 2;
         font-size: 2.5rem;
     }

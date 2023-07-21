@@ -437,9 +437,7 @@ footer a{
     }
 
     .txt-3 h2{
-        margin-top: -68px;
-        margin-left: 18%;
-
+        margin: -68px auto 0;
     }
 
     .txt-4{
